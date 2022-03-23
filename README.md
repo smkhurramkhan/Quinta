@@ -1,6 +1,13 @@
 # Quinta
 Quinta allows the user to focus on the few relationships that matter, take note of information worth  remembering, like secrets between friends, or their favorite ice cream flavour. It reminds of the user of key  dates, like a friendship anniversary or a birthday. It suggests ways to start conversations based on common  interests. Using the theory of the five love languages, it recommends ways to strengthen the user’s  relationships, and even suggests articles for further reading. The app assists the user become a good  friend, colleague, partner, and lover. 
 
+A Quinta app uses some of the best practices in Android Development. Including:
+
+ViewModel
+LiveData
+Kotlin Coroutines
+Room
+
 ![Screenshot_20211028-005159](https://user-images.githubusercontent.com/48547204/159780198-563aa73b-635d-4ab1-96cb-bdd09d34d368.png)
 ![Screenshot_20211028-004859](https://user-images.githubusercontent.com/48547204/159780208-3bb56256-9af2-4e38-8823-cd64d2c917b3.png)
 ![Screenshot_20211028-005213](https://user-images.githubusercontent.com/48547204/159780227-82d4924f-5316-4cef-840d-7ff4718d6c8a.png)
