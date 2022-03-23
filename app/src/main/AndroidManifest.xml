@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mynotes">
+
+    <application
+        android:name=".MyApplication"
+        android:fullBackupOnly="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyNotes">
+        <activity
+            android:name=".ui.suggestions.ActivityAddSuggestion"
+            android:exported="false" />
+        <activity
+            android:name=".ui.upcomingevents.ActivityUpComingEvents"
+            android:exported="false" />
+        <activity
+            android:name=".ui.suggestions.ActivitySuggestions"
+            android:exported="false" />
+        <activity
+            android:name=".ui.lovelanguages.ActivityLoveLanguages"
+            android:exported="false" />
+        <activity
+            android:name=".ui.allposts.ActivityPosts"
+            android:exported="false" />
+        <activity
+            android:name=".ui.name.ActivityGetName"
+            android:exported="false" />
+        <activity
+            android:name=".ui.showposts.ActivityAllPosts"
+            android:exported="false" />
+        <activity
+            android:name=".ui.showpersons.ActivityShowPersons"
+            android:exported="false" />
+        <activity
+            android:name=".ui.addaction.ActivityAddAction"
+            android:exported="false" />
+        <activity
+            android:name=".ui.addperson.ActivityAddPerson"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splash.ActivitySplash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

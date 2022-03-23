@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.splash.ActivitySplash">
+
+        <ImageView
+            android:id="@+id/logo"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/heading"
+            android:layout_marginTop="16dp"
+            android:layout_width="150dp"
+            android:src="@drawable/logo"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@id/subheading"
+            app:layout_constraintStart_toStartOf="@id/logo"
+            app:layout_constraintEnd_toEndOf="@id/logo"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            android:textColor="@color/heading_color"
+            android:text="@string/app_name"
+            android:textSize="40sp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/heading"
+            app:layout_constraintStart_toStartOf="@id/heading"
+            app:layout_constraintEnd_toEndOf="@id/heading"
+            app:layout_constraintBottom_toTopOf="@id/mainImage"
+            android:textStyle="bold"
+            android:id="@+id/subheading"
+            android:textSize="16sp"
+            android:text="@string/have_better_relationships"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/mainImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leaves"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

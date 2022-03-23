@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundcolor"
+        tools:context=".ui.addperson.ActivityAddPerson">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/edit_person"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvFirstName"
+                app:layout_constraintEnd_toStartOf="@id/btnDiscard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/btnDiscard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/btndiscard"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/discard"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/heading"
+                app:layout_constraintEnd_toStartOf="@id/btnSavePerson"
+                app:layout_constraintStart_toEndOf="@id/heading"
+                app:layout_constraintTop_toTopOf="@id/heading" />
+
+            <TextView
+                android:id="@+id/btnSavePerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:padding="8dp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/heading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnDiscard"
+                app:layout_constraintTop_toTopOf="@id/heading" />
+
+
+            <TextView
+                android:id="@+id/tvFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/first_name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvLastName"
+                app:layout_constraintEnd_toStartOf="@id/etFirstName"
+                app:layout_constraintStart_toStartOf="@id/heading"
+                app:layout_constraintTop_toBottomOf="@id/heading" />
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tvFirstName"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toEndOf="@id/tvFirstName"
+                app:layout_constraintTop_toTopOf="@id/tvFirstName" />
+
+
+            <TextView
+                android:id="@+id/tvLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/last_name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvRelationship"
+                app:layout_constraintEnd_toStartOf="@id/etLastName"
+                app:layout_constraintStart_toStartOf="@id/heading"
+                app:layout_constraintTop_toBottomOf="@id/tvFirstName" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tvLastName"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toEndOf="@id/tvLastName"
+                app:layout_constraintTop_toTopOf="@id/tvLastName" />
+
+            <TextView
+                android:id="@+id/tvRelationship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/relationship"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvCompany"
+                app:layout_constraintEnd_toStartOf="@id/etRelationship"
+                app:layout_constraintStart_toStartOf="@id/heading"
+                app:layout_constraintTop_toBottomOf="@id/tvLastName" />
+
+            <EditText
+                android:id="@+id/etRelationship"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tvRelationship"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toEndOf="@id/tvRelationship"
+                app:layout_constraintTop_toTopOf="@id/tvRelationship" />
+
+            <!--hello there-->
+            <TextView
+                android:id="@+id/tvCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/company"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvBirthday"
+                app:layout_constraintEnd_toStartOf="@id/etCompany"
+                app:layout_constraintStart_toStartOf="@id/heading"
+                app:layout_constraintTop_toBottomOf="@id/tvRelationship" />
+
+            <EditText
+                android:id="@+id/etCompany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tvCompany"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toEndOf="@id/tvCompany"
+                app:layout_constraintTop_toTopOf="@id/tvCompany" />
+
+
+            <TextView
+                android:id="@+id/tvBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/birthday"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvInterests"
+                app:layout_constraintEnd_toStartOf="@id/etCompany"
+                app:layout_constraintStart_toStartOf="@id/heading"
+                app:layout_constraintTop_toBottomOf="@id/tvCompany" />
+
+            <EditText
+                android:id="@+id/etBirthday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:layout_constraintBottom_toBottomOf="@id/tvBirthday"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toEndOf="@id/tvBirthday"
+                app:layout_constraintTop_toTopOf="@id/tvBirthday" />
+            <!--end here -->
+
+            <TextView
+                android:id="@+id/tvInterests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/interests"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/etInterests1"
+                app:layout_constraintStart_toStartOf="@id/tvRelationship"
+                app:layout_constraintTop_toBottomOf="@id/tvBirthday" />
+
+
+            <EditText
+                android:id="@+id/etInterests1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintBottom_toTopOf="@id/etInterests2"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toStartOf="@id/tvInterests"
+                app:layout_constraintTop_toBottomOf="@id/tvInterests"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/etInterests2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintBottom_toTopOf="@id/etInterests3"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toStartOf="@id/tvInterests"
+                app:layout_constraintTop_toBottomOf="@id/etInterests1" />
+
+            <EditText
+                android:id="@+id/etInterests3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                app:layout_constraintBottom_toTopOf="@id/tvTopThreeLang"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toStartOf="@id/tvInterests"
+                app:layout_constraintTop_toBottomOf="@id/etInterests2" />
+
+            <TextView
+                android:id="@+id/tvTopThreeLang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/top_three"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/etlove1"
+                app:layout_constraintStart_toStartOf="@id/tvRelationship"
+                app:layout_constraintTop_toBottomOf="@id/etInterests3" />
+
+
+            <EditText
+                android:id="@+id/etlove1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toTopOf="@id/etlove2"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toStartOf="@id/tvInterests"
+                app:layout_constraintTop_toBottomOf="@id/tvTopThreeLang"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/etlove2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toTopOf="@id/etlove3"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toStartOf="@id/tvInterests"
+                app:layout_constraintTop_toBottomOf="@id/etlove1" />
+
+            <EditText
+                android:id="@+id/etlove3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toTopOf="@id/tvNotes"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toStartOf="@id/tvInterests"
+                app:layout_constraintTop_toBottomOf="@id/etlove2" />
+
+
+            <TextView
+                android:id="@+id/tvNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/notes"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/etNotes"
+                app:layout_constraintStart_toStartOf="@id/tvRelationship"
+                app:layout_constraintTop_toBottomOf="@id/etlove3" />
+
+
+            <EditText
+                android:id="@+id/etNotes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_border"
+                android:gravity="top|left"
+                android:hint="@string/notes"
+                android:inputType="textEmailAddress|textMultiLine"
+                android:lines="20"
+                android:minLines="5"
+                android:padding="8dp"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                app:backgroundTint="@color/headinggrey"
+                app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+                app:layout_constraintStart_toStartOf="@id/tvNotes"
+                app:layout_constraintTop_toBottomOf="@id/tvNotes"
+                tools:ignore="RtlHardcoded" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

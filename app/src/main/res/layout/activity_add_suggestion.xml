@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/edit_action"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tvactionname"
+            app:layout_constraintEnd_toStartOf="@id/btnDiscard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/btnDiscard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/btndiscard"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/discard"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/heading"
+            app:layout_constraintEnd_toStartOf="@id/btnSavePost"
+            app:layout_constraintStart_toEndOf="@id/heading"
+            app:layout_constraintTop_toTopOf="@id/heading" />
+
+        <TextView
+            android:id="@+id/btnSavePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/headingbggreen"
+            android:padding="8dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/heading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnDiscard"
+            app:layout_constraintTop_toTopOf="@id/heading" />
+
+
+        <TextView
+            android:id="@+id/tvactionname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/action_name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_due_date"
+            app:layout_constraintEnd_toStartOf="@id/et_action_name"
+            app:layout_constraintStart_toStartOf="@id/heading"
+            app:layout_constraintTop_toBottomOf="@id/heading" />
+
+        <EditText
+            android:id="@+id/et_action_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tvactionname"
+            app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+            app:layout_constraintStart_toEndOf="@id/tvactionname"
+            app:layout_constraintTop_toTopOf="@id/tvactionname" />
+
+
+        <TextView
+            android:id="@+id/tv_due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/due_date"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_due_time"
+            app:layout_constraintEnd_toStartOf="@id/et_due_date"
+            app:layout_constraintStart_toStartOf="@id/heading"
+            app:layout_constraintTop_toBottomOf="@id/tvactionname" />
+
+        <EditText
+            android:id="@+id/et_due_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintBottom_toBottomOf="@id/tv_due_date"
+            app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+            app:layout_constraintStart_toEndOf="@id/tv_due_date"
+            app:layout_constraintTop_toTopOf="@id/tv_due_date" />
+
+        <TextView
+            android:id="@+id/tv_due_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/due_time"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_frequency"
+            app:layout_constraintEnd_toStartOf="@id/et_due_time"
+            app:layout_constraintStart_toStartOf="@id/heading"
+            app:layout_constraintTop_toBottomOf="@id/tv_due_date" />
+
+        <EditText
+            android:id="@+id/et_due_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintBottom_toBottomOf="@id/tv_due_time"
+            app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+            app:layout_constraintStart_toEndOf="@id/tv_due_time"
+            app:layout_constraintTop_toTopOf="@id/tv_due_time" />
+
+        <!--hello there-->
+        <TextView
+            android:id="@+id/tv_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/recurring_frequency"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tvNotes"
+            app:layout_constraintEnd_toStartOf="@id/etFrequency"
+            app:layout_constraintStart_toStartOf="@id/heading"
+            app:layout_constraintTop_toBottomOf="@id/tv_due_time" />
+
+        <EditText
+            android:id="@+id/etFrequency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tv_frequency"
+            app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+            app:layout_constraintStart_toEndOf="@id/tv_frequency"
+            app:layout_constraintTop_toTopOf="@id/tv_frequency" />
+        <!--end here -->
+
+
+        <TextView
+            android:id="@+id/tvNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/notes"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/etNotes"
+            app:layout_constraintStart_toStartOf="@id/tv_due_time"
+            app:layout_constraintTop_toBottomOf="@id/etFrequency" />
+
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/bg_border"
+            android:gravity="top|left"
+            android:hint="@string/notes"
+            android:inputType="textEmailAddress|textMultiLine"
+            android:lines="20"
+            android:minLines="5"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            app:backgroundTint="@color/headinggrey"
+            app:layout_constraintEnd_toEndOf="@id/btnDiscard"
+            app:layout_constraintStart_toStartOf="@id/tvNotes"
+            app:layout_constraintTop_toBottomOf="@id/tvNotes"
+            tools:ignore="RtlHardcoded" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

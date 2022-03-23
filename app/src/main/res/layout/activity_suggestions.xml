@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundcolor"
+        tools:context=".ui.suggestions.ActivitySuggestions">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/personName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:maxLines="1"
+                android:text="@string/good_day_njacob_s"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/etRelationshipCompany"
+                app:layout_constraintEnd_toStartOf="@id/btnPersonEdit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/btnPersonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/edit"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/etRelationshipCompany"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/personName"
+                app:layout_constraintTop_toTopOf="@id/personName" />
+
+
+            <TextView
+                android:id="@+id/etRelationshipCompany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:text="@string/friend_harvard_university"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/notesMain"
+                app:layout_constraintEnd_toStartOf="@id/btnPersonEdit"
+                app:layout_constraintStart_toStartOf="@id/personName"
+                app:layout_constraintTop_toBottomOf="@id/personName" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/notesMain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cardbg"
+                android:paddingBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@id/tvQualityTimeHeading"
+                app:layout_constraintEnd_toEndOf="@id/btnPersonEdit"
+                app:layout_constraintStart_toStartOf="@id/personName"
+                app:layout_constraintTop_toBottomOf="@id/etRelationshipCompany">
+
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:text="@string/married_to_annie_from_hr_has_a_dog_named_scotty_likes_cricket_and_tennis_wishes_we_could_go_on_a_roadtrip"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tvQualityTimeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btndiscard"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/quality_time"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/phonecall"
+                app:layout_constraintStart_toStartOf="@id/notesMain"
+                app:layout_constraintTop_toBottomOf="@id/notesMain" />
+
+
+            <TextView
+                android:id="@+id/phonecall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/phonecall"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/dinner"
+                app:layout_constraintEnd_toStartOf="@id/tvVisitthem"
+                app:layout_constraintStart_toStartOf="@id/tvQualityTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvQualityTimeHeading"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/tvVisitthem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/visitthem"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/phonecall"
+                app:layout_constraintEnd_toEndOf="@id/notesMain"
+                app:layout_constraintStart_toEndOf="@id/phonecall"
+                app:layout_constraintTop_toTopOf="@id/phonecall" />
+
+            <TextView
+                android:id="@+id/dinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/gofordinner"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvwordsofAffirmation"
+                app:layout_constraintEnd_toStartOf="@id/tvVisitthem"
+                app:layout_constraintStart_toStartOf="@id/tvQualityTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvVisitthem"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/baketogether"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/baketogether"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/dinner"
+                app:layout_constraintEnd_toEndOf="@id/tvVisitthem"
+                app:layout_constraintStart_toEndOf="@id/dinner"
+                app:layout_constraintTop_toTopOf="@id/dinner" />
+
+
+            <TextView
+                android:id="@+id/tvwordsofAffirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btndiscard"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/words_affirmation"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/thankthem"
+                app:layout_constraintStart_toStartOf="@id/notesMain"
+                app:layout_constraintTop_toBottomOf="@id/dinner" />
+
+
+            <TextView
+                android:id="@+id/thankthem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/thankthem"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/sendcard"
+                app:layout_constraintEnd_toStartOf="@id/tvVisitthem"
+                app:layout_constraintStart_toStartOf="@id/tvQualityTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvwordsofAffirmation"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/complimentthem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/complimentthem"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/thankthem"
+                app:layout_constraintEnd_toEndOf="@id/notesMain"
+                app:layout_constraintStart_toEndOf="@id/thankthem"
+                app:layout_constraintTop_toTopOf="@id/thankthem" />
+
+            <TextView
+                android:id="@+id/sendcard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/sendacard"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/tvVisitthem"
+                app:layout_constraintStart_toStartOf="@id/tvQualityTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/thankthem"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/sendsong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/sendsong"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/sendcard"
+                app:layout_constraintEnd_toEndOf="@id/tvVisitthem"
+                app:layout_constraintStart_toEndOf="@id/sendcard"
+                app:layout_constraintTop_toTopOf="@id/sendcard" />
+
+
+            <TextView
+                android:id="@+id/tvGiftsHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btndiscard"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/gifts"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/sendflowers"
+                app:layout_constraintStart_toStartOf="@id/notesMain"
+                app:layout_constraintTop_toBottomOf="@id/sendcard" />
+
+            <TextView
+                android:id="@+id/sendflowers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/sendflowers"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/giftvoucher"
+                app:layout_constraintEnd_toStartOf="@id/tvVisitthem"
+                app:layout_constraintStart_toStartOf="@id/tvQualityTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvGiftsHeading"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/buythem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/buythemsomething"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/sendflowers"
+                app:layout_constraintEnd_toEndOf="@id/notesMain"
+                app:layout_constraintStart_toEndOf="@id/sendflowers"
+                app:layout_constraintTop_toTopOf="@id/sendflowers" />
+
+            <TextView
+                android:id="@+id/giftvoucher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/giftvoucher"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvphysicaltouchheading"
+                app:layout_constraintEnd_toStartOf="@id/tvVisitthem"
+                app:layout_constraintStart_toStartOf="@id/tvQualityTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/sendflowers"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/tvphysicaltouchheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btndiscard"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/physical_touch"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/priortize"
+                app:layout_constraintStart_toStartOf="@id/notesMain"
+                app:layout_constraintTop_toBottomOf="@id/giftvoucher" />
+
+
+            <TextView
+                android:id="@+id/priortize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/expresslove"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/specialoccsasion"
+                app:layout_constraintEnd_toStartOf="@id/physicalaffection"
+                app:layout_constraintStart_toStartOf="@id/tvQualityTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvphysicaltouchheading"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/physicalaffection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/physical_affection"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/priortize"
+                app:layout_constraintEnd_toEndOf="@id/notesMain"
+                app:layout_constraintStart_toEndOf="@id/priortize"
+                app:layout_constraintTop_toTopOf="@id/priortize" />
+
+            <TextView
+                android:id="@+id/specialoccsasion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/specialoccasions"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tvacts"
+                app:layout_constraintEnd_toStartOf="@id/tvVisitthem"
+                app:layout_constraintStart_toStartOf="@id/tvQualityTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/priortize"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/tvacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btndiscard"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/acts_of_service"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/help"
+                app:layout_constraintStart_toStartOf="@id/notesMain"
+                app:layout_constraintTop_toBottomOf="@id/specialoccsasion" />
+
+
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/askforhelp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/footer"
+                app:layout_constraintEnd_toStartOf="@id/physicalaffection"
+                app:layout_constraintStart_toStartOf="@id/tvQualityTimeHeading"
+                app:layout_constraintTop_toBottomOf="@id/tvacts"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/specialeffor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/headingbggreen"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/sepcialeffor"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/help"
+                app:layout_constraintEnd_toEndOf="@id/notesMain"
+                app:layout_constraintStart_toEndOf="@id/help"
+                app:layout_constraintTop_toTopOf="@id/help" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/footer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cardbg"
+                android:paddingBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/btnPersonEdit"
+                app:layout_constraintStart_toStartOf="@id/personName"
+                app:layout_constraintTop_toBottomOf="@id/help">
+
+                <TextView
+                    android:id="@+id/footernotes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:text="@string/moreinfoonlove"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/btnFiveLanguages"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/btnFiveLanguages"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/headingbggreen"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="@string/thefivelovelang"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/footernotes"
+                    app:layout_constraintTop_toBottomOf="@id/footernotes"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
