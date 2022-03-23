@@ -1,0 +1,2 @@
+# Quinta
+Quinta allows the user to focus on the few relationships that matter, take note of information worth  remembering, like secrets between friends, or their favorite ice cream flavour. It reminds of the user of key  dates, like a friendship anniversary or a birthday. It suggests ways to start conversations based on common  interests. Using the theory of the five love languages, it recommends ways to strengthen the user’s  relationships, and even suggests articles for further reading. The app assists the user become a good  friend, colleague, partner, and lover. 
